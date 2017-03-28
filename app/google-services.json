@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "351795408261",
+    "firebase_url": "https://smart-mobile-tracker.firebaseio.com",
+    "project_id": "smart-mobile-tracker",
+    "storage_bucket": "smart-mobile-tracker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:351795408261:android:6bf98d4c444c1673",
+        "android_client_info": {
+          "package_name": "com.example.itp.sample_fcm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "351795408261-t33jpv22g259qne0fc5fa40mf6ll0j6m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhswQQPSMUYf_NCDzJ6J0Oynm4xxZJ6L8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
