@@ -3,8 +3,10 @@ package com.example.itp.sample_fcm.Activities;
 import android.Manifest;
 import android.app.LoaderManager;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.CursorLoader;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.database.ContentObserver;
 import android.database.Cursor;
@@ -386,6 +388,13 @@ public class Get_Child_Activity extends AppCompatActivity implements LoaderManag
                             final_childphone = child_phone;
                             getdetails_layout.setVisibility(View.VISIBLE);
                             checkdetails_layout.setVisibility(View.GONE);
+
+                            SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences("Number_Pref", Context.MODE_PRIVATE);
+                            SharedPreferences.Editor editor = sharedPreferences.edit();
+                            editor.putString("parent_phone", parent_phone);
+                            editor.putString("child_phone", child_phone);
+                            editor.commit();
+
                         }
                     }
                 }, new Response.ErrorListener() {
